@@ -1,0 +1,144 @@
+reset
+set term pdfcairo enhanced dashed size 6,6
+set encoding utf8
+set termoption enhanced
+set output "inipos.pdf"
+set xlabel "{/*1.6 {/cmmi10 L}}" font "cmr10, 18" offset 0, 0
+set ylabel "{/*1.6 {/cmmi10 L}}" font "cmr10, 18" offset 1, 0
+set xrange[1:]
+set yrange[1:]
+set lmargin 8
+set tics font ", 20"
+set size ratio -1
+unset key
+set grid
+show grid
+
+set style line 1 lc rgb 'black' pointtype 6 pointsize 1.2
+set style line 2 lc rgb 'black' pointtype 7 pointsize 1.2
+
+plot "posN.dat" i 0 u 2:3 w p ls 1 t"{/*1.1 N_A}", "posN2.dat" i 0 u 2:3 w p ls 2 t"{/*1.1 N_B}"
+
+
+##########################################################################
+
+# Gnuplot script to plot 2D Colored Heatmap
+# Data without blank line separators
+# load'heat.gpt'
+
+reset
+set term pdfcairo enhanced dashed size 7,6.4
+set encoding utf8
+set termoption enhanced
+set output "Npos.pdf"
+unset key
+set xlabel "{/*1.6 {/cmmi10 L}}" font "cmr10, 18" offset 0, 0
+set ylabel "{/*1.6 {/cmmi10 L}}" font "cmr10, 18" offset -1, 0
+set view map
+set palette rgbformulae 22,13,-31
+set size ratio -1
+set tics font ", 20"
+set lmargin 0
+set rmargin 0
+set tmargin 0
+set bmargin 0
+set size 1, 1.06
+set xrange[1:]
+set yrange[1:]
+set grid
+show grid
+splot "posN.dat" i 1 using 2:3:4 with points pointtype 7 \
+pointsize 1.1 palette linewidth 0
+
+########################################################
+
+# Gnuplot script to plot 2D Colored Heatmap
+# Data without blank line separators
+# load'heat.gpt'
+
+reset
+set term pdfcairo enhanced dashed size 7,6.4
+set encoding utf8
+set termoption enhanced
+set output "N2pos.pdf"
+unset key
+set xlabel "{/*1.6 {/cmmi10 L}}" font "cmr10, 18" offset 0, 0
+set ylabel "{/*1.6 {/cmmi10 L}}" font "cmr10, 18" offset -1, 0
+set view map
+set palette rgbformulae 22,13,-31
+set size ratio -1
+set tics font ", 20"
+set lmargin 0
+set rmargin 0
+set tmargin 0
+set bmargin 0
+set size 1, 1.06
+set xrange[1:]
+set yrange[1:]
+set grid
+show grid
+splot "posN2.dat" i 1 using 2:3:4 with points pointtype 7 \
+pointsize 1.1 palette linewidth 0
+
+########################################################
+
+# Gnuplot script to plot 2D Colored Heatmap
+# Data without blank line separators
+# load'heat.gpt'
+
+reset
+set term pdfcairo enhanced dashed size 7,6.4
+set encoding utf8
+set termoption enhanced
+set output "Nstat.pdf"
+unset key
+set xlabel "{/*1.6 {/cmmi10 L}}" font "cmr10, 18" offset 0, 0
+set ylabel "{/*1.6 {/cmmi10 L}}" font "cmr10, 18" offset -1, 0
+set view map
+set palette rgbformulae 22,13,-31
+set size ratio -1
+set tics font ", 20"
+set lmargin 0
+set rmargin 0
+set tmargin 0
+set bmargin 0
+set size 1, 1.06
+set xrange[1:]
+set yrange[1:]
+set grid
+show grid
+splot "posN.dat" i 2 using 2:3:4 with points pointtype 7 \
+pointsize 1.1 palette linewidth 0
+
+########################################################
+
+# Gnuplot script to plot 2D Colored Heatmap
+# Data without blank line separators
+# load'heat.gpt'
+
+reset
+set term pdfcairo enhanced dashed size 7,6.4
+set encoding utf8
+set termoption enhanced
+set output "N2stat.pdf"
+unset key
+set xlabel "{/*1.6 {/cmmi10 L}}" font "cmr10, 18" offset 0, 0
+set ylabel "{/*1.6 {/cmmi10 L}}" font "cmr10, 18" offset -1, 0
+set view map
+set palette rgbformulae 22,13,-31
+set size ratio -1
+set tics font ", 20"
+set lmargin 0
+set rmargin 0
+set tmargin 0
+set bmargin 0
+set size 1, 1.06
+set xrange[1:]
+set yrange[1:]
+set grid
+show grid
+splot "posN2.dat" i 2 using 2:3:4 with points pointtype 7 \
+pointsize 1.1 palette linewidth 0
+
+########################################################
+

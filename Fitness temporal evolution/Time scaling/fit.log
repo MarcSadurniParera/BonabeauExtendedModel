@@ -1,0 +1,36 @@
+
+
+*******************************************************************************
+Thu May 09 12:01:10 2024
+
+
+FIT:    data read from "MonopTime.dat" u 1:2
+        format = x:z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=a*x**(b)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.1713120145e+13  0.00e+00 2.03e+04  3.900000e+01  1.000000e+00
+   9 2.1123175275e+09 -1.80e-03 2.03e+04  3.946831e+01  2.006094e+00
+
+After 9 iterations the fit converged.
+final sum of squares of residuals : 2.11232e+009
+rel. change during last iteration : -1.7996e-009
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 15320
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.34702e+008
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 39.4683          +/- 4.649        (11.78%)
+b               = 2.00609          +/- 0.02227      (1.11%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.999  1.000 

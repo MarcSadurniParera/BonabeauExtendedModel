@@ -14,7 +14,7 @@ to hierarchical society for each class. This behaviour depends on the control pa
 role of the inverse of the temperature of the system. Results are invariant with regard to the system’s
 size, contingent solely on the quantity of agents within each class. Finally, a couple of scaling laws
 are provided thus showing a data collapse from different model parameters and they follow a shape
-which can be related to the presence of a phase transition in the model
+which can be related to the presence of a phase transition in the model.
 
 ### Prerequisites
 

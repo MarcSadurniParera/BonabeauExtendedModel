@@ -1,2 +1,3 @@
 * linguagem
+*.f90 linguist-detectable=True
 *.f90 linguagem=Fortran

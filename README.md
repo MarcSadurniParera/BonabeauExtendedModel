@@ -1,7 +1,7 @@
 # Emergence of social hierarchies in a society with two competitive classes
 
 ## Abstract
-Agent based models describing social interactions among individuals can help to better understand
+Agent-based models describing social interactions among individuals can help to better understand
 emerging macroscopic patterns in societies. One of the topics which is worth tackling is the formation
 of different kinds of hierarchies that emerge in social spaces such as cities. Here we propose a
 Bonabeau-like model by adding a second class of agents. The fundamental particularity of our model
@@ -9,32 +9,68 @@ is that only a pairwise interaction between agents of the opposite class is allo
 thus only change by competition among the two classes, while the total fitness in the society remains
 constant. The main result is that for a broad range of values of the model parameters, the fitness of
 the agents of each class show a decay in time except for one or very few agents which capture almost
-all the fitness in the society. Numerical simulations also reveal a singular behaviour from egalitarian
-to hierarchical society for each class. This behaviour depends on the control parameter 𝜂, playing the
-role of the inverse of the temperature of the system. Results are invariant with regard to the system’s
+all the fitness in the society. Numerical simulations also reveal a singular shift from egalitarian to
+hierarchical society for each class. This behaviour depends on the control parameter 𝜂, playing the
+role of the inverse of the temperature of the system. Results are invariant with regard to the system
 size, contingent solely on the quantity of agents within each class. Finally, a couple of scaling laws
 are provided thus showing a data collapse from different model parameters and they follow a shape
 which can be related to the presence of a phase transition in the model.
 
-### Prerequisites
+## Prerequisites
+To run all the code and scripts for this paper, you will need to install:
+- Fortran 90
+- Gnuplot
+- Python
 
-Instal Fortran 90, Gnuplot and Python to Run all the Code and Scripts of this paper.
+## How to Use the Code
 
-### How to use the code:
+### Fortran 90
+1. **Compilation:**
+   - Open the terminal in the directory where the `.f90` files are located.
+   - Compile the code using the following command:
+     ```sh
+     gfortran Name.f90 randomgenerator.f90 -o Name.exe
+     ```
+   - Example for this project:
+     ```sh
+     gfortran bonabeau_extended.f90 dranxor.f90 -o b.exe
+     ```
 
-* Fortran90:
-  * To compile, open the terminal at the route of the .f90 and write:
+2. **Execution:**
+   - Run the executable by opening the terminal in the directory where the `.exe` file is located and typing:
+     ```sh
+     ./Name.exe
+     ```
+   - Example for this project:
+     ```sh
+     ./b.exe
+     ```
+
+### Gnuplot
+- To generate most of the figures, run the Gnuplot scripts in the same directories where you have the generated `.dat` files from the Fortran 90 code.
   ```sh
-  gfortran Name.f90 randomgenerator.f90 -o Name.exe
+  gnuplot Name.gnu
   ```
-  In our work: gfortran bonabeau_extended.f90 dranxor.f90 -o b.exe
-  * To execute, open the terminal at the route of the .exe and write:
+- Example for this project:
   ```sh
-  name.exe
+  gnuplot thermalizationfitness.gnu
   ```
-  In our work: b.exe  
-* GnuPlot: to generate almost all the Figures, run the scripts on the same routes you will have the generated files.dat of the previous command in Fortran 90.
-  ```sh
-  gnuplot name.gnu
-  ```
-  Example: gnuplot thermalizationfitness.gnu
+### Python
+1. **Installation:**
+   - Install Jupyter Notebook if you haven't already:
+     ```sh
+     pip install notebook
+     ```
+   - Install the necessary Python packages by running:
+     ```sh
+     pip install -r requirements.txt
+     ```
+     (Ensure that you have a `requirements.txt` file listing all the necessary packages, or manually install the required packages as needed.)
+
+2. **Running the Jupyter Notebook:**
+   - Open Jupyter Notebook by running the following command in your terminal:
+     ```sh
+     jupyter notebook
+     ```
+   - Navigate to the directory containing the notebook file (`.ipynb`) and open it.
+   - Execute the cells in the notebook to run the Python code and generate the required outputs.

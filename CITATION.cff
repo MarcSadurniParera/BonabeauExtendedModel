@@ -1,8 +1,13 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
+title: "Emergence of social hierarchies in a society with two competitive classes"
 authors:
   - family-names: Sadurní Parera
     given-names: Marc
     orcid: https://orcid.org/0000-0002-9870-5513
-title: "Emergence of social hierarchies in a society with two competitive classes"
+    affiliation: Universitat de Barcelona
+version: 1.0.0
+doi:
 date-released: 2024-05-14
+license: Creative Commons
+repository-code: https://github.com/MarcSadurniParera/BonabeauExtendedModel

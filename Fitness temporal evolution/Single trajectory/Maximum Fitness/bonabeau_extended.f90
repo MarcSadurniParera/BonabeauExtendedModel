@@ -1,5 +1,5 @@
 ! Marc Sadurní Parera et al.
-! Emergence of social hierarchies in a society with two competitive classes
+! Emergence of social hierarchies in a society with two competitive groups
 program BonabeauExtendedModel
 implicit none
 !Variables/Parameters definitions

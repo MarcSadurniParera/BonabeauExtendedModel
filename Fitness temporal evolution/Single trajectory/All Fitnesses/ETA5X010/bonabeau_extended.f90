@@ -1,5 +1,5 @@
 ! Marc Sadurní Parera et al.
-! Emergence of social hierarchies in a society with two competitive classes
+! Emergence of social hierarchies in a society with two competitive groups
 program BonabeauExtendedModel
 implicit none
 !Variables/Parameters definitions
@@ -67,7 +67,7 @@ t=0.0d0     !initialization of the time variable
 movements=0   !Store data every some movements
 
 !Store the observables in a file
-write(30,*) t, maxval(fitness), maxval(fitness2), sum(fitness), sum(fitness2)
+write(30,*) t, (fitness2(i), i=1,N2)
 do while (t.lt.tmax) !bucle over Gillespie time
       ! Gillespie Algorithm    
       tn=-dlog(dran_u())/omegatot
@@ -179,7 +179,7 @@ do while (t.lt.tmax) !bucle over Gillespie time
       ENDIF
       !Store the data every some movements
       if (mod(movements,5000).eq.0) then
-            write(30,*) t, maxval(fitness), maxval(fitness2), sum(fitness), sum(fitness2)
+            write(30,*) t, (fitness2(i), i=1,N2)
       endif
 
 ! End loop of MC

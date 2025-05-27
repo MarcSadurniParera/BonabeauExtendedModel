@@ -15,7 +15,7 @@ set ytics font ", 19"
 set xtics 0,200,1000 font ", 19"
 set size ratio 0.7
 
-plot for [col=2:51] 'fitnessbusiness.dat' i 0 using 1:col with lines lw 2
+plot for [col=2:51] 'fitness2.dat' i 0 using 1:col with lines lw 2
 
 ########################################################################
 ########################################################################
@@ -39,4 +39,4 @@ set size ratio 0.7
 set format x "%.1t·10^{%T}"
 set xtics add ("0" 0)
 
-plot for [col=2:51] 'fitnessbusiness.dat' i 0 using 1:col with lines lw 2
+plot for [col=2:51] 'fitness2.dat' i 0 using 1:col with lines lw 2

@@ -1,6 +1,11 @@
+Data and Code to reproduce the manuscript
+
 # Emergence of social hierarchies in a society with two competitive groups
 
+The manuscript is available at: https://doi.org/10.1016/j.chaos.2025.116660
+
 ## Abstract
+
 Agent-based models describing social interactions among individuals can help to better understand 
 emerging macroscopic patterns in societies. One of the topics which is worth tackling is the formation 
 of different kinds of hierarchies that emerge in social spaces such as cities. Here we propose 
@@ -17,6 +22,7 @@ thus showing a data collapse from different model parameters and they follow a s
 to the presence of a phase transition in the model.
 
 ## Prerequisites
+
 To run all the code and scripts for this paper, you will need to install:
 - Fortran 90
 - Gnuplot
